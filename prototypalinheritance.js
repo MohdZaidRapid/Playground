@@ -15,4 +15,5 @@ let object2 = {
 
 }
 
-object2.__proto__ = object
+
+object2.__proto__ = object.__proto__
