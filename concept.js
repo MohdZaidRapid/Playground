@@ -201,3 +201,39 @@
 // fn.getDetails();
 // fn1.getDetails();
 // fn1.getDetailsOfPerson();
+
+// Use Object.create to pass properties
+
+// const barista = Object.create(job);
+
+// barista.position = "barista";
+// barista.showDetails();
+
+// const job1 = {
+//   name: "zaid",
+//   age: 23,
+
+//   showDetails() {
+//     console.log(`My name is ${this.name} and age is ${this.age}`);
+//   },
+// };
+
+// job1.showDetails();
+
+// const job2 = Object.create(job1);
+
+// job2.showDetails();
+
+const person = {
+  isHuman: false,
+  printIntroduction: function () {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  },
+};
+
+const me = Object.create(person);
+
+me.name = "Matthew"; // "name" is a property set on "me", but not on "person"
+me.isHuman = true; // inherited properties can be overwritten
+
+me.printIntroduction();
