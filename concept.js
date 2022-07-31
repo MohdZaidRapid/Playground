@@ -96,18 +96,110 @@
 //   console.log(`${key}  ${val}`);
 // }
 // Initialize an object
-const name = {
-  firstName: 'Philip',
-  lastName: 'Fry'
-};
+// const name = {
+//   firstName: 'Philip',
+//   lastName: 'Fry'
+// };
 
-// Initialize another object
-const details = {
-  job: 'Delivery Boy',
-  employer: 'Planet Express'
-};
+// // Initialize another object
+// const details = {
+//   job: 'Delivery Boy',
+//   employer: 'Planet Express'
+// };
 
-// Merge the objects
-const character = Object.assign(name, details);
+// // Merge the objects
+// const character = Object.assign(name, details);
 
-console.log(character);
+// console.log(character)
+
+// Object assign
+
+// Initialize an object
+// const name = {
+//   firstName: "Philip",
+//   lastName: "Fry",
+// };
+
+// // Initialize another object
+// const details = {
+//   firstName: "zaid",
+//   job: "Delivery Boy",
+//   employer: "Planet Express",
+// };
+
+// // Merge the objects
+// const character = Object.assign(name, details);
+
+// console.log(character);
+
+// Initialize an object
+// const user = {
+//   username: "Allah",
+//   password: "S.A.W",
+// };
+
+// // Freeze the object
+// const newUser = Object.freeze(user);
+
+// newUser.password = "Rehman";
+// newUser.active = true;
+
+// console.log(newUser);
+
+// const person = {
+//   name: "Zaid",
+//   age: 24,
+// };
+
+// const zaid = Object.seal(person);
+// // const zaid = person;
+// zaid.age = 23;
+// zaid.name = "zaidi";
+// zaid.fr = true;
+
+// console.log(zaid);
+// console.log(person);
+
+// Shallow copy and deep copy
+// const Person1 = {
+//   name: "zaid",
+//   age: 23,
+// };
+
+// const person2 = Person1;
+// // console.log(person2.name);
+// person2.name = "zaidi";
+
+// console.log(person2);
+// console.log(Person1);
+
+// function Fun(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// function Fun1(name, age, programming) {
+//   Fun.call(this, name, age);
+//   this.programming = programming;
+// }
+
+// Fun.prototype.getDetails = function () {
+//   console.log(`Name ${this.name} and ${this.age} age  of person `);
+// };
+
+// Fun1.prototype = Fun.prototype;
+
+// Fun1.prototype.getDetailsOfPerson = function () {
+//   console.log(
+//     `Name ${this.name} Profession ${this.programming} and age of the ${this.age} `
+//   );
+// };
+
+// const fn = new Fun("zaid", 23);
+// const fn1 = new Fun1("zazaidiid", 26, "JS");
+
+// fn.getDetails();
+// fn1.getDetails();
+// fn1.getDetailsOfPerson();
+
+
