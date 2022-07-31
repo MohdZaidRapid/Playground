@@ -201,5 +201,3 @@
 // fn.getDetails();
 // fn1.getDetails();
 // fn1.getDetailsOfPerson();
-
-
