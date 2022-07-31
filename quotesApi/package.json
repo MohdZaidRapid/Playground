@@ -4,12 +4,17 @@
   "description": "",
   "main": "quote.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node quote.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^3.2.10"
+  },
+  "pkg": {
+    "assets": [
+      "./node_modules/**/*"
+    ]
   }
 }
