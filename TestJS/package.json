@@ -1,0 +1,14 @@
+{
+  "name": "quotesapi",
+  "version": "1.0.0",
+  "main": "quote.js",
+  "scripts": {
+    "start": "node quote.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pkg": "^5.8.0"
+  }
+}
