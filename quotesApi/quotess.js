@@ -1,11 +1,11 @@
-
 const https = require("https");
 
 // fetch("https://quotes.rest/qod?language=en")
 //   .then((res) => res.json())
 //   .then((data) => console.log(data.contents.quotes[0].quote));
+// const url = "https://quotes.rest/qod?language=en";
 
-const url = "https://quotes.rest/qod?language=en";
+const url = "https://type.fit/api/quotes";
 const request = https.request(url, (response) => {
   //   let data = data.contents.quotes[0].quote;
   let data = "";
@@ -15,7 +15,8 @@ const request = https.request(url, (response) => {
 
   response.on("end", () => {
     const body = JSON.parse(data);
-    console.log(body.contents.quotes[0].quote);
+    console.log(body[0].text);
+    console.log(body[0].author);
   });
 });
 
