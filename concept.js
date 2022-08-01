@@ -69,6 +69,11 @@
 //   accountant: "Oscar",
 // };
 
+// for (const key of Object.keys(employees)) {
+//   console.log(employees[key]);
+//   console.log(key);
+// }
+
 // const emp = Object.keys(employees);
 // console.log(emp);
 
@@ -224,16 +229,27 @@
 
 // job2.showDetails();
 
-const person = {
-  isHuman: false,
-  printIntroduction: function () {
-    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
-  },
-};
+// const person = {
+//   isHuman: false,
+//   printIntroduction: function () {
+//     console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+//   },
+// };
 
-const me = Object.create(person);
+// const me = Object.create(person);
 
-me.name = "Matthew"; // "name" is a property set on "me", but not on "person"
-me.isHuman = true; // inherited properties can be overwritten
+// me.name = "Matthew"; // "name" is a property set on "me", but not on "person"
+// me.isHuman = true; // inherited properties can be overwritten
 
-me.printIntroduction();
+// me.printIntroduction();
+
+function Fun(name, age) {
+  this.age = age;
+  this.name = name;
+}
+
+function Fun1(name, age, programming) {
+  Fun.call(this, name, age);
+  this.programming = programming;
+}
+
