@@ -1,0 +1,23 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "06-raw-https.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohdZaidRapid/Playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohdZaidRapid/Playground/issues"
+  },
+  "homepage": "https://github.com/MohdZaidRapid/Playground#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
