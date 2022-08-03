@@ -31,3 +31,15 @@ obj3.skills.prog = "jss";
 
 console.log(obj3);
 console.log(obj);
+
+// filter
+const users = [
+  { user: "barney", age: 36, active: false },
+  { user: "fred", age: 40, active: true },
+];
+
+const result = _.filter(users, function (val) {
+  return val.active === false;
+});
+
+console.log(result);
