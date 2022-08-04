@@ -1,7 +1,5 @@
 const express = require("express");
 const axios = require("axios").default;
-const chalk = require("chalk");
-const { random } = require("lodash");
 
 const app = express();
 // // fetch("https://quotes.rest/qod?language=en")
@@ -55,6 +53,10 @@ async function fetch() {
   return dat;
 }
 
+fetch();
+
+// const ui=
+
 app.get("/quote", async (req, res) => {
   let num = await Math.floor(Math.random() * (1000 + 1));
 
@@ -62,12 +64,12 @@ app.get("/quote", async (req, res) => {
 
   res.send(`<h1>${dat[num].text} by --------------------> ${dat[num].author}`);
 });
-// app.get("/quote", async (req, res) => {
-//   console.log(resdata);
+// // app.get("/quote", async (req, res) => {
+// //   console.log(resdata);
 
-//   res.send(`<h1>${data[0].text} ${data[0].author}</h1>`);
-// });
+// //   res.send(`<h1>${data[0].text} ${data[0].author}</h1>`);
+// // });
 
 app.listen(process.env.PORT || 8000, () => {
-  console.log(`server running on port 8000`);
+  console.log("Quote of the day");
 });
