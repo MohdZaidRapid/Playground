@@ -1,23 +1,18 @@
 {
-  "name": "playground",
+  "name": "quotesapi",
   "version": "1.0.0",
-  "description": "",
-  "main": "06-raw-https.js",
+  "main": "quote.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MohdZaidRapid/Playground.git"
+    "start": "node quote.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MohdZaidRapid/Playground/issues"
-  },
-  "homepage": "https://github.com/MohdZaidRapid/Playground#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "axios": "^0.21.1",
+    "chalk": "^4.1.2",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "pkg": "^5.8.0"
   }
 }

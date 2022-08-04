@@ -5,14 +5,14 @@ const _ = require("lodash");
 
 const chn = _.chunk(["a", "b", "c", "d"], 2);
 
-console.log(chn);
+// console.log(chn);
 
 const rmfalsy = _.compact(["0", "", 0, 1, 2, null, undefined]);
 
-console.log(rmfalsy);
+// console.log(rmfalsy);
 
 const rmsameVal = _.difference([1, 2, 34, 5, 6], [1, 23, 5, 6, 7, 8]);
-console.log(rmsameVal);
+// console.log(rmsameVal);
 
 const obj = {
   name: "zaid",
@@ -25,12 +25,12 @@ const obj = {
 // console.log(obj);
 // console.log(obj2);
 
-const obj3 = _.cloneDeep(obj);
-// console.log(obj3);
-obj3.skills.prog = "jss";
+// const obj3 = _.cloneDeep(obj);
+// // console.log(obj3);
+// obj3.skills.prog = "jss";
 
-console.log(obj3);
-console.log(obj);
+// console.log(obj3);
+// console.log(obj);
 
 // filter
 const users = [
@@ -43,3 +43,7 @@ const result = _.filter(users, function (val) {
 });
 
 console.log(result);
+
+const arr = [1, 23, 4, 5, 67];
+const sume = _.sum(arr);
+console.log(sume);
